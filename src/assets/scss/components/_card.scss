@@ -1,0 +1,35 @@
+%card {
+  border-radius: (10 / 16) * 1rem;
+  display: block;
+  box-shadow: 0px 0px 13px 0px rgba(82, 63, 105, 0.05);
+  border: 1px solid rgba(0,0,0,.125);
+  padding: 60px 25px 15px;
+  background-color: #fff;
+}
+
+.card {
+  @extend %card;
+  position: relative;
+
+  &__header {
+    display: block;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 0;
+    transform: translate3d(-50%, -50%, 0);
+    padding: (18 / 16) * 1rem (15 / 16) * 1rem;
+    background: linear-gradient(90deg, $primary 0%, #E872E1 100%);
+    box-shadow: 0px 16px 21px -9px rgba(0,0,0,0.75);
+    border-radius: (10 / 16) * 1rem;
+    color: #ffffff;
+    font: {
+      size: (18 / 16) * 1rem;
+      style: italic;
+    }
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+  }
+}

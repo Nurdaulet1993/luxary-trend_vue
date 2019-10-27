@@ -1,0 +1,20 @@
+%buttons {
+  display: inline-block;
+  padding: (20 / 16) * 1rem (25 / 16) * 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  box-shadow: 0px 16px 21px -9px rgba(0,0,0,0.75);
+  border-radius: (23 / 16) * 1rem;
+}
+
+.btn {
+  @extend %buttons;
+
+  &-primary {
+    color: #fff;
+    background-color: $primary;
+  }
+}
+

@@ -1,0 +1,22 @@
+.hero {
+  height: calc(100vh - 130px);
+  background-image: url("assets/img/girl.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 90% bottom;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: (250 / 16) * 1rem;
+  }
+
+  &__content {
+    max-width: (700 / 16) * 1rem;
+
+    h1 {
+      margin-bottom: (30 / 16) * 1rem;
+    }
+  }
+}
